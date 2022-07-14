@@ -1,0 +1,7 @@
+<article class="article">
+  <app-img [img]="product.image"></app-img>
+  <!-- <img width="200" [src]="product.image" alt="" /> -->
+  <h2>{{ product.name }}</h2>
+  <p>{{product.price | currency:'USD'}}</p>
+  <button (click)="addToCart()">Add to Cart</button>
+</article>

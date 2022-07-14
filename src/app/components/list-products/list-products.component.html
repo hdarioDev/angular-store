@@ -1,0 +1,7 @@
+<h1>{{title | uppercase | reverseString}}</h1>
+<p>Date {{ date | date:'short' }}</p>
+<h2>{{total}}</h2>
+<div class="products--grid">
+  <app-product [product]="product" *ngFor="let product of products" (addedProduct)="onAddToShoppingCart($event)">
+  </app-product>
+</div>
